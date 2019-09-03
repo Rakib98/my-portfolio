@@ -5,7 +5,6 @@ import Content from '../components/Content';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-
 class ContactPage extends React.Component {
     constructor(props) {
         super(props);

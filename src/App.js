@@ -12,8 +12,6 @@ import ContactPage from './pages/ContactPage';
 
 class App extends React.Component {
 
-  
-
   constructor(props) {
     super(props);
     this.state = {

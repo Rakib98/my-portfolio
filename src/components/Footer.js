@@ -13,8 +13,8 @@ function Footer() {
                         Rakib Abdur
                     </Col>
 
-                    <Col className="p-0 d-flex justify-content-end " md={3}>
-                        Made by Rakib
+                    <Col className="p-0 d-flex justify-content-end git-link" md={3}>
+                    <a href="https://github.com/rakib98" rel="noopener noreferrer" target="_blank"><i className="fab fa-github fa-2x"></i></a>
                     </Col>
                 </Row>
             </Container>

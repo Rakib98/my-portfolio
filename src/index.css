@@ -57,6 +57,14 @@ code {
   padding: 10px 15px;
 }
 
+.git-link a{
+  color: white;
+}
+
+.git-link a:hover{
+  color: rgb(134, 138, 151);
+}
+
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 75px !important;
