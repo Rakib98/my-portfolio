@@ -26,7 +26,7 @@ class App extends React.Component {
         subTitle: 'My projects',
         text: 'Links:',
         git: [<a href="https://github.com/rakib98" rel="noopener noreferrer" target="_blank" className="pr-3"><i className="fab fa-github fa-2x"></i></a>,
-        <a href="https://drive.google.com/file/d/1l6R3plg0sT-ZxT--6dFlRZj0_fQe1SmI/view" rel="noopener noreferrer" target="_blank" className="pr-5"><i className="far fa-file-alt fa-2x"></i></a>
+        <a href="https://drive.google.com/open?id=1DBO7lcSeBx4tHR7dJPIDmd_rj3DMWwMaJkooEvLtut4" rel="noopener noreferrer" target="_blank" className="pr-5"><i className="far fa-file-alt fa-2x"></i></a>
       ]
       },
       about: {
