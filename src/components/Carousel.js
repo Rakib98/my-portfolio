@@ -3,6 +3,10 @@ import React from 'react';
 import Card from '../components/Card';
 
 import brookfield from '../assets/img/brookfield.png';
+import phpShowcase from '../assets/img/phpShowcase.png';
+import walsall from '../assets/img/walsall.png';
+import pizza from '../assets/img/pizza.png';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
@@ -15,10 +19,34 @@ class Carousel extends React.Component {
                 {
                     id: 0,
                     title: 'Brookfield Garden & Pet Centre',
-                    subTitle: 'Simple website',
+                    subTitle: 'Website for a fictional gaden and pet store',
                     imgSrc: brookfield,
-                    link: 'https://stupefied-heyrovsky-e82f27.netlify.com/',
-                    selected: false
+                    link: 'https://rakib-brookfield.netlify.com',
+                    code: 'https://github.com/Rakib98/Brookfield-Website'
+                },
+                {
+                    id:1,
+                    title: 'PHP Showcase',
+                    subTitle: 'Website showing various PHP functions',
+                    imgSrc: phpShowcase,
+                    link: '',
+                    code: 'https://github.com/Rakib98/PHP-Showcase'
+                },
+                {
+                    id:2,
+                    title: 'Walsall Tourism',
+                    subTitle: 'Fictional website for a tourism comapny',
+                    imgSrc: walsall,
+                    link: 'https://rakib-walsalltourism.netlify.com/',
+                    code: 'https://github.com/Rakib98/WalsallTourism'
+                },
+                {
+                    id:3,
+                    title: 'Pizza Ordering App',
+                    subTitle:'Program built in C#, for a fictional pizza company',
+                    imgSrc: pizza,
+                    link:'',
+                    code:'https://github.com/Rakib98/PizzaOrdering'
                 }
             ]
         }
@@ -53,7 +81,7 @@ class Carousel extends React.Component {
     render() {
         return(
             <Container fluid={true}>
-                <Row className="justify-content-around">
+                <Row className="col-md-10 offset-md-1">
                     {this.makeItems(this.state.items)}
                 </Row>
             </Container>

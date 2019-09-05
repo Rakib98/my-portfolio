@@ -22,9 +22,12 @@ class App extends React.Component {
         { title: 'Contact', path: '/contact' }
       ],
       home: {
-        title: 'My Portfolio',
-        subTitle: 'Projects that I created',
-        text: 'more to come'
+        title: 'Rakib\'s Portfolio',
+        subTitle: 'My projects',
+        text: 'Links:',
+        git: [<a href="https://github.com/rakib98" rel="noopener noreferrer" target="_blank" className="pr-3"><i className="fab fa-github fa-2x"></i></a>,
+        <a href="https://drive.google.com/file/d/1l6R3plg0sT-ZxT--6dFlRZj0_fQe1SmI/view" rel="noopener noreferrer" target="_blank" className="pr-5"><i className="far fa-file-alt fa-2x"></i></a>
+      ]
       },
       about: {
         title: 'About Me'
@@ -54,7 +57,7 @@ class App extends React.Component {
           </Navbar>
         
 
-          <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+          <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} git={this.state.home.git}/>} />
           <Route path="/about" exact render={() => <AboutPage title = {this.state.about.title} />} />
           <Route path="/contact" exact render={() => <ContactPage title = {this.state.contact.title} />} />
           <Footer />
