@@ -44,7 +44,7 @@ class App extends React.Component {
         <Container className="p-0" fluid={true}>
           
           <Navbar className="navbar sticky-top navbar-dark bg-dark" expand="lg">
-            <Link to="/"><Navbar.Brand><i className="fas fa-sun"></i></Navbar.Brand></Link>
+            <Link to="/"><Navbar.Brand><i className="fas fa-ankh"></i></Navbar.Brand></Link>
             <Navbar.Toggle className="broder-0" aria-controls="navbar-toggle" />
 
             <Navbar.Collapse id="navbar-toggle">

@@ -1,22 +1,25 @@
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
 
 function CardInfo(props) {
 
-    const style = useSpring({opacity: 1, from: {opacity: 0}});
 
-    return(
-        <animated.div className="c-card-info" style={style}>
-            <p className="c-card-title">{props.title}</p>
-            <p className="c-card-sub-title">{props.subTitle}</p>
+    return (
+        <div>
+            <Card.Title>{props.title}</Card.Title>
+            <Card.Text>
+                {props.subTitle}
+            </Card.Text>
+            <div className="button-box col-lg-12">
+                {
+                    !props.link ? '' : (<a href={props.link} target="_blank" rel="noopener noreferrer" className="pr-2"><Button variant="success" className="col-md-5">Demo</Button></a>)
+                }
 
-            {
-                !props.link ? '' : (<a href={props.link} target="_blank" rel="noopener noreferrer" className="pr-2">Demo</a>)
-            }
-
-            
-            <a href={props.code} target="_blank" rel="noopener noreferrer">GitHub</a>
-        </animated.div>
+                <a href={props.code} target="_blank" rel="noopener noreferrer"><Button variant="dark" className="col-md-5">GitHub</Button></a>
+            </div>
+        </div>
     );
 
 }
