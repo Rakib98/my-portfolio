@@ -101,11 +101,16 @@ code {
   
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 410px) {
+
+  .wrapper h1 {
+    font-size: 45px !important;
+  }
+
   .outside-card {
-    padding:0 !important;  
+    padding: 0 !important;  
     width: 100%;
-    margin: auto;
+    /* margin: auto; */
   }
 
   .card button {
@@ -114,6 +119,6 @@ code {
 
   .card {
     margin-bottom: 10px;
-    width: 100% !important;
+    width: 120% !important;
   }
 }
