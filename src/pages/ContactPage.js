@@ -75,7 +75,7 @@ class ContactPage extends React.Component {
           
           <Form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
 
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="contact" value="contact" />
             <Form.Group>
               <Form.Label htmlFor="full-name">Full Name</Form.Label>
               <Form.Control
