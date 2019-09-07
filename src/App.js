@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import {Switch} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -68,8 +69,10 @@ class App extends React.Component {
           git={this.state.home.git}
           />} 
           />
+          <Switch>
           <Route path="/about" exact render={() => <AboutPage title = {this.state.about.title} />} />
           <Route path="/contact" exact render={() => <ContactPage title = {this.state.contact.title} />} />
+          </Switch>
           <Footer />
         </Container>
       </Router>
