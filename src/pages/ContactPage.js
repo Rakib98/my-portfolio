@@ -66,8 +66,9 @@ class ContactPage extends React.Component {
                 <Content>
                 <h4 className="alert alert-danger">CONTACT FORM CURRENTLY NOT WORKING.</h4>
                 <p>I am currently working on the submission process, so that the message can be send to my email. For questions contact me with the email written in my CV. Thanks</p>
-                    <Form onSubmit={this.handleSubmit}>
-                        <fieldset disabled>
+                    <Form onSubmit={this.handleSubmit} name="contact" netlify netlify-honeypot="bot-field">
+                        
+                        <input type="hidden" name="form-name" value="contact" />
                         <Form.Group>
                             <Form.Label htmlFor="full-name">Full Name</Form.Label>
                             <Form.Control id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange} />
@@ -90,7 +91,7 @@ class ContactPage extends React.Component {
                             <br/>
                         {this.state.emailSent === true && <p className="alert alert-success">Email Sent</p>}
                         {this.state.emailSent === false && <p className="alert alert-danger">Email NOT Sent</p>}
-                        </fieldset>
+                      
                     </Form>
                 </Content>
                 <br/>
