@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+/* import axios from "axios"; */
 import Hero from "../components/Hero";
 import Content from "../components/Content";
 import Form from "react-bootstrap/Form";
@@ -27,7 +27,7 @@ class ContactPage extends React.Component {
     });
   };
 
-  handleSubmit = event => {
+ /*  handleSubmit = event => {
     event.preventDefault();
 
     this.setState({
@@ -56,7 +56,7 @@ class ContactPage extends React.Component {
           emailSent: false
         });
       });
-  };
+  }; */
 
   render() {
     return (
@@ -64,23 +64,18 @@ class ContactPage extends React.Component {
         <Hero title={this.props.title} />
 
         <Content>
-          <h4 className="alert alert-danger">
+         {/*  <h4 className="alert alert-danger">
             CONTACT FORM CURRENTLY NOT WORKING.
           </h4>
           <p>
             I am currently working on the submission process, so that the
             message can be send to my email. For questions contact me with the
             email written in my CV. Thanks
-          </p>
-
-          <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-            <input type="text" name="name" />
-            <input type="email" name="email" />
-            <textarea name="message"></textarea>
-          </form>
+          </p> */}
           
-          <Form name="contact" method="post">
-            <input type="hidden" name="form-name" value="contact" />
+          <Form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+
+          <input type="hidden" name="form-name" value="contact" />
             <Form.Group>
               <Form.Label htmlFor="full-name">Full Name</Form.Label>
               <Form.Control
@@ -89,7 +84,7 @@ class ContactPage extends React.Component {
                 type="text"
                 value={this.state.name}
                 onChange={this.handleChange}
-                
+
               />
             </Form.Group>
 

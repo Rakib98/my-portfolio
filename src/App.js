@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import logo from './assets/img/logo.png';
 
 class App extends React.Component {
 
@@ -47,7 +48,7 @@ class App extends React.Component {
         <Container className="p-0" fluid={true}>
           
           <Navbar className="navbar sticky-top navbar-dark bg-dark" expand="lg">
-            <Link to="/"><Navbar.Brand><i className="fas fa-dna"></i></Navbar.Brand></Link>
+            <Link to="/"><Navbar.Brand><img width={25} src={logo} alt=""/></Navbar.Brand></Link>
             <Navbar.Toggle className="broder-0" aria-controls="navbar-toggle" />
 
             <Navbar.Collapse id="navbar-toggle">
