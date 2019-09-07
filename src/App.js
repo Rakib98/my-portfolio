@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import {Switch} from 'react-router-dom';
+import {Switch, Redirect} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -49,29 +49,23 @@ class App extends React.Component {
         <Container className="p-0" fluid={true}>
           
           <Navbar className="navbar sticky-top navbar-dark bg-dark" expand="lg">
-            <Link to="/"><Navbar.Brand><img width={25} src={logo} alt=""/></Navbar.Brand></Link>
+            <Link to="/home"><Navbar.Brand><img width={25} src={logo} alt=""/></Navbar.Brand></Link>
             <Navbar.Toggle className="broder-0" aria-controls="navbar-toggle" />
 
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/" >Home</Link>
+                <Link className="nav-link" to="/home" >Home</Link>
                 <Link className="nav-link" to="/about">About</Link>
                 <Link className="nav-link" to="/contact">Contact</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
         
-
-          <Route path="/" exact render={() => <HomePage 
-          title={this.state.home.title} 
-          subTitle={this.state.home.subTitle} 
-          text={this.state.home.text} 
-          git={this.state.home.git}
-          />} 
-          />
           <Switch>
-          <Route path="/about" exact render={() => <AboutPage title = {this.state.about.title} />} />
-          <Route path="/contact" exact render={() => <ContactPage title = {this.state.contact.title} />} />
+          <Route path="/home" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} git={this.state.home.git}/>}/>
+          <Route path="/about"  render={() => <AboutPage title = {this.state.about.title} />} />
+          <Route path="/contact"  render={() => <ContactPage title = {this.state.contact.title} />} />
+          <Redirect to="/home" />
           </Switch>
           <Footer />
         </Container>
