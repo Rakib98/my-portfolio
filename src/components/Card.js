@@ -7,7 +7,7 @@ function Cards(props) {
 
     return (
         <div className="outside-card pr-4">
-            <Card style={{ width: '20rem' }}>
+            <Card className="mb-2">
                 <Card.Img variant="top" src={props.item.imgSrc} />
                 <Card.Body>
                     <CardInfo title={props.item.title} subTitle={props.item.subTitle} link={props.item.link} code={props.item.code} />

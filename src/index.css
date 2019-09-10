@@ -57,7 +57,7 @@ code {
 
 .card {
   width: 20rem;
-  box-shadow: 2px 2px 10px #5d5e5fa2;
+  box-shadow: 1px 1px 8px #6868699d;
   border-radius: 0px !important;
 }
 
@@ -94,7 +94,9 @@ code {
     margin-bottom: 10px;
     width: 80%;
   }
-
+  .card button {
+    margin-bottom: 10px;
+  }
   .card:hover {
     transform: scale(1);
   }
