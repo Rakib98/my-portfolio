@@ -92,10 +92,8 @@ class Carousel extends React.Component {
 
   render() {
     return (
-      <Container fluid={true}>
-        <Row className="col-md-10 offset-md-1">
-          {this.makeItems(this.state.items)}
-        </Row>
+      <Container>
+        <Row className="">{this.makeItems(this.state.items)}</Row>
       </Container>
     );
   }
