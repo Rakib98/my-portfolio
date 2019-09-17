@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 function Cards(props) {
   return (
     <div className="col-md-4 outside-card pr-4">
-      <Card className="mb-3">
+      <Card className="mb-3 test">
         <Card.Img variant="top" src={props.item.imgSrc} />
         <Card.Body>
           <CardInfo
