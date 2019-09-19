@@ -20,7 +20,7 @@ function CardInfo(props) {
 
         <a href={props.code} target="_blank" rel="noopener noreferrer">
           <Button variant="dark" className="btn-block mt-1">
-            GitHub
+            Code
           </Button>
         </a>
       </div>
