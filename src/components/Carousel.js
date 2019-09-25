@@ -26,11 +26,11 @@ class Carousel extends React.Component {
         },
         {
           id: 1,
-          title: "PHP Showcase",
-          subTitle: "Website showing various PHP functions",
-          imgSrc: phpShowcase,
-          link: "",
-          code: "https://github.com/Rakib98/PHP-Showcase"
+          title: "Lyrics Search App",
+          subTitle: "React application that fetches data from an API.",
+          imgSrc: lyricsApp,
+          link: "https://rakib-lyrics-search.netlify.com",
+          code: "https://github.com/Rakib98/search-lyrics-songs"
         },
         {
           id: 2,
@@ -42,19 +42,19 @@ class Carousel extends React.Component {
         },
         {
           id: 3,
+          title: "PHP Showcase",
+          subTitle: "Website showing various PHP functions",
+          imgSrc: phpShowcase,
+          link: "",
+          code: "https://github.com/Rakib98/PHP-Showcase"
+        },
+        {
+          id: 4,
           title: "Pizza Ordering App",
           subTitle: "Program built in C#, for a fictional pizza company",
           imgSrc: pizza,
           link: "",
           code: "https://github.com/Rakib98/PizzaOrdering"
-        },
-        {
-          id: 4,
-          title: "Lyrics Search App",
-          subTitle: "React application that fetches data from an API.",
-          imgSrc: lyricsApp,
-          link: "https://rakib-lyrics-search.netlify.com",
-          code: "https://github.com/Rakib98/search-lyrics-songs"
         }
       ]
     };
