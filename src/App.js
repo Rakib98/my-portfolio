@@ -74,21 +74,20 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse> */}
           </Navbar>
-          <Switch>
-            <HomePage
-              title={this.state.home.title}
-              subTitle={this.state.home.subTitle}
-              text={this.state.home.text}
-              git={this.state.home.git}
-            />
-            <hr />
-            <AboutPage title={this.state.about.title} />
-            {/* <Route path="/home" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} git={this.state.home.git}/>}/>
+          {/* <Switch>
+            <Route path="/home" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} git={this.state.home.git}/>}/>
           <Route path="/about"  render={() => <AboutPage title = {this.state.about.title} />} />
-          <Route path="/contact"  render={() => <ContactPage title = {this.state.contact.title} />} /> */}
+          <Route path="/contact"  render={() => <ContactPage title = {this.state.contact.title} />} />
             <Redirect to="/home" />
-          </Switch>
-
+          </Switch> */}
+          <HomePage
+            title={this.state.home.title}
+            subTitle={this.state.home.subTitle}
+            text={this.state.home.text}
+            git={this.state.home.git}
+          />
+          <hr />
+          <AboutPage title={this.state.about.title} />
           <Footer />
         </Container>
       </Router>
