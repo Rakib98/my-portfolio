@@ -35,7 +35,7 @@ class Carousel extends React.Component {
         {
           id: 2,
           title: "Walsall Tourism",
-          subTitle: "Fictional website for a tourism comapny",
+          subTitle: "Fictional website for a tourism company",
           imgSrc: walsall,
           link: "https://rakib-walsalltourism.netlify.com/",
           code: "https://github.com/Rakib98/WalsallTourism"
