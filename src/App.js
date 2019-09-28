@@ -1,16 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router /* , Route */, Link } from "react-router-dom";
 import { Switch, Redirect } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+/* import Nav from "react-bootstrap/Nav"; */
 import "./App.css";
 
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
-import logo from "./assets/img/logo.png";
+/* import ContactPage from "./pages/ContactPage";
+import logo from "./assets/img/logo.png"; */
 
 class App extends React.Component {
   constructor(props) {
@@ -74,20 +74,21 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse> */}
           </Navbar>
-          {/* <Switch>
-          <Route path="/home" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} git={this.state.home.git}/>}/>
+          <Switch>
+            <HomePage
+              title={this.state.home.title}
+              subTitle={this.state.home.subTitle}
+              text={this.state.home.text}
+              git={this.state.home.git}
+            />
+            <hr />
+            <AboutPage title={this.state.about.title} />
+            {/* <Route path="/home" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} git={this.state.home.git}/>}/>
           <Route path="/about"  render={() => <AboutPage title = {this.state.about.title} />} />
-          <Route path="/contact"  render={() => <ContactPage title = {this.state.contact.title} />} />
-          <Redirect to="/home" />
-          </Switch> */}
-          <HomePage
-            title={this.state.home.title}
-            subTitle={this.state.home.subTitle}
-            text={this.state.home.text}
-            git={this.state.home.git}
-          />
-          <hr />
-          <AboutPage title={this.state.about.title} />
+          <Route path="/contact"  render={() => <ContactPage title = {this.state.contact.title} />} /> */}
+            <Redirect to="/home" />
+          </Switch>
+
           <Footer />
         </Container>
       </Router>
