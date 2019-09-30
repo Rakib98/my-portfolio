@@ -23,7 +23,7 @@ class App extends React.Component {
       ],
       home: {
         title: "Portfolio",
-        subTitle: "Projects",
+        subTitle: "Projects:",
         text: "GitHub and Resume:",
         git: [
           <a
