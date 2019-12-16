@@ -34,14 +34,6 @@ class Carousel extends React.Component {
         },
         {
           id: 2,
-          title: "Walsall Tourism",
-          subTitle: "Fictional website for a tourism company",
-          imgSrc: walsall,
-          link: "https://rakib-walsalltourism.netlify.com/",
-          code: "https://github.com/Rakib98/WalsallTourism"
-        },
-        {
-          id: 3,
           title: "PHP Showcase",
           subTitle: "Website showing various PHP functions",
           imgSrc: phpShowcase,
@@ -49,7 +41,7 @@ class Carousel extends React.Component {
           code: "https://github.com/Rakib98/PHP-Showcase"
         },
         {
-          id: 4,
+          id: 3,
           title: "Pizza Ordering App",
           subTitle: "Program built in C#, for a fictional pizza company",
           imgSrc: pizza,
